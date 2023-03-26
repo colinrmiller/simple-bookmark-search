@@ -1,0 +1,13 @@
+
+#results {
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    font-size: 18px;
+}
+
+.result-selected {
+    background-color: #b6b6b6 !important;
+}
+
+
