@@ -16,22 +16,30 @@ searchInput.addEventListener('input', (event) => {
         results.forEach((bookmark, index) => {
             if (bookmark.url && bookmark.url.indexOf('javascript:') !== 0) {
                 const titleLowerCase = bookmark.title.toLowerCase();
-                const index = titleLowerCase.indexOf(searchText);
-
-                if (index !== -1) {
+                console.log(searchText.split(' '))
+                const found = searchText.split(' ').every(term => titleLowerCase.includes(term));
+            
+                if (found) {
                     const link = document.createElement('a');
                     link.href = bookmark.url;
                     link.textContent = bookmark.title;
                     link.target = '_blank';
                     link.style.display = 'block';
-
-                    matches.push({ link, index });
+    
+                    // Use the bookmark's index in the search results as its position
+                    const position = results.indexOf(bookmark);
+    
+                    matches.push({ link, position });
+                    console.log('matches', matches)
                 }
             }
         });
 
         matches
-            .sort((a, b) => a.index - b.index)
+            .sort((a, b) => {
+                aPos = 
+                console.log('sort', a.position, b.position)
+                return a.position - b.position})
             .forEach(({ link }, index) => {
                 if (index === 0) {
                     link.className = 'result-selected';

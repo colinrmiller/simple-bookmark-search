@@ -1,6 +1,6 @@
 {
-    "name": "Omnibar Bookmarks",
-    "description": "Reorders Omnibar suggestions to favor bookmarks",
+    "name": "Simple Bookmark search",
+    "description": "Barebones popup that allows quick bookmark access by name",
     "version": "1.0",
     "manifest_version": 3,
     "permissions": [
