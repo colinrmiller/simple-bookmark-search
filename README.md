@@ -7,4 +7,4 @@ bare-bones chrome extension to quickly search bookmarks
 - Click Load unpacked.
 - Find and select simple-bookmark-search extension folder.
 
-You're ready to go, just click ctrl + i and a popup should appear to search your bookmarks. In the case that chrome settings are overwriting this keybinding, a custom shortcut can be ascribed at chrome://extensions/shortcuts. 
+You're ready to go, just click `ctrl + i` and a popup should appear to search your bookmarks. In the case that chrome settings are overwriting this keybinding, a custom shortcut can be ascribed at `chrome://extensions/shortcuts`. 
